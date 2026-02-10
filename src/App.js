@@ -16,7 +16,7 @@ function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div className="min-h-screen gradient-bg relative">
             <Navbar />
             <main id="main-content" className="main-below-nav pb-8 safe-area-bottom" tabIndex={-1}>

@@ -40,6 +40,36 @@ A modern React website for **local academic excursions**. Visitors browse excurs
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
+## 🌐 Deploy to GitHub Pages
+
+1. **Set the correct `homepage` in `package.json`**  
+   Replace the placeholder with your actual GitHub Pages URL:
+   ```json
+   "homepage": "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME"
+   ```
+   Example: if your repo is `wildschool` and your username is `jane`, use:
+   `https://jane.github.io/wildschool`
+
+2. **Install dependencies** (including `gh-pages`):
+   ```bash
+   npm install
+   ```
+
+3. **Deploy** (builds and pushes the `build` folder to the `gh-pages` branch):
+   ```bash
+   npm run deploy
+   ```
+
+4. **Turn on GitHub Pages** in your repo:
+   - GitHub → Your repo → **Settings** → **Pages**
+   - Under **Source**, choose **Deploy from a branch**
+   - Branch: **gh-pages** (or **main** if you use the root `/ (root)` folder)
+   - If you used `npm run deploy`, select branch **gh-pages**, folder **/ (root)**, then Save.
+
+Your site will be at `https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/`.
+
+**Note:** The app uses `basename={process.env.PUBLIC_URL}` so routing works correctly when served from the repo subpath.
+
 ## 🏗️ Project Structure
 
 ```
