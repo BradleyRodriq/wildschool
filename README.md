@@ -1,14 +1,14 @@
 # Wild School Experiences
 
-A modern, beautiful React website for educational content, academic excursions, and workshop booking. Built with React, Tailwind CSS, and Framer Motion for smooth animations.
+A modern React website for **local academic excursions**. Visitors browse excursions and submit a booking request; the owner receives the details by email — no payment or checkout.
 
 ## 🚀 Features
 
-- **Educational Content Library** - Browse and search through comprehensive learning materials
-- **Academic Excursions** - Explore field trips and educational journeys
-- **Workshop Booking System** - Multi-step booking process for educational workshops
-- **Responsive Design** - Mobile-first approach with beautiful animations
-- **Modern UI/UX** - Clean, professional design with smooth interactions
+- **What We Offer** - Browse local academic excursions and educational talks; request a booking or request a talk (contact form with subject pre-filled)
+- **Booking by email** - No payment online; the owner receives booking details by email
+- **Blog** - Owner-maintained blog (edit `src/data/blogPosts.js` to add or edit posts)
+- **Contact** - Contact form that emails the owner (Formspree or mailto)
+- **Responsive design** - Mobile-first with Tailwind and Framer Motion
 
 ## 🛠️ Tech Stack
 
@@ -47,12 +47,18 @@ src/
 ├── components/          # Reusable UI components
 │   ├── Navbar.js       # Navigation component
 │   └── Footer.js       # Footer component
+├── data/
+│   ├── excursions.js   # Excursion listings (edit here)
+│   ├── talks.js       # Educational talks (edit here)
+│   └── blogPosts.js   # Blog posts (edit here to add/update blog)
 ├── pages/              # Page components
 │   ├── Home.js         # Landing page
-│   ├── EducationalContent.js  # Content library
-│   ├── AcademicExcursions.js  # Field trips
-│   ├── BookWorkshop.js # Workshop booking
-│   └── About.js        # Company information
+│   ├── AcademicExcursions.js  # What We Offer (excursions list)
+│   ├── BookExcursion.js # Excursion booking (emails owner)
+│   ├── Blog.js         # Blog listing
+│   ├── BlogPost.js     # Single blog post
+│   ├── Contact.js      # Contact form
+│   └── About.js        # About page
 ├── App.js              # Main app component
 ├── index.js            # Entry point
 └── index.css           # Global styles
@@ -74,23 +80,23 @@ src/
 - Statistics and testimonials
 - Modern gradient backgrounds
 
-### Educational Content
-- Searchable content library
-- Category filtering
-- Content cards with ratings
-- Interactive elements
+### What We Offer
+- **Excursions** — Local academic excursions; category and search; “Request booking” goes to booking form.
+- **Talks** — Educational talks (duration, audience, topics); “Request this talk” opens the Contact form with the talk title and a short message template pre-filled.
 
-### Academic Excursions
-- Field trip destinations
-- Location-based filtering
-- Detailed excursion information
-- Booking integration
+### Blog
+- List of posts (newest first); search by title/excerpt
+- Single post view at `/blog/:slug`
+- Owner adds/edits posts in `src/data/blogPosts.js` (title, date, excerpt, image, body paragraphs)
 
-### Book Workshop
-- Multi-step booking process
-- Workshop selection
-- Form validation
-- Success confirmation
+### Book Excursion
+- Choose an excursion (or arrive via link from an excursion card)
+- Submit contact details, group size, preferred date/time, and notes
+- **Email to owner**: either via [Formspree](https://formspree.io) (optional) or a `mailto:` fallback
+- No payment — owner confirms by email
+
+### Contact
+- Contact form (name, email, subject, message) — emails owner via Formspree or mailto
 
 ### About
 - Company mission and vision
@@ -116,9 +122,25 @@ colors: {
 ```
 
 ### Content
-- Update workshop information in `BookWorkshop.js`
-- Modify excursion details in `AcademicExcursions.js`
-- Edit team information in `About.js`
+- Edit excursions in `src/data/excursions.js`
+- Edit talks in `src/data/talks.js` (title, description, duration, audience, topics, image, format)
+- Add or edit blog posts in `src/data/blogPosts.js` (title, slug, date, excerpt, image, author, body array)
+- Edit team and copy in `About.js` and translation files in `src/translations/`
+
+### Sending booking emails to the owner
+- **Option A (recommended)**  
+  Create a form at [Formspree](https://formspree.io), get your form ID, and set:
+  ```bash
+  REACT_APP_FORMSPREE_FORM_ID=your_form_id
+  ```
+  Submissions will POST to Formspree and the owner will receive an email.
+- **Option B (no signup)**  
+  Set the owner’s email in `.env`:
+  ```bash
+  REACT_APP_OWNER_EMAIL=owner@example.com
+  ```
+  Submitting the booking form will open the user’s email client with a pre-filled message to that address.  
+Copy `.env.example` to `.env` and fill in the values.
 
 ### Images
 Replace placeholder cat images with your own educational content:
@@ -152,14 +174,10 @@ npm run build
 
 ## 🎯 Future Enhancements
 
-- [ ] User authentication system
-- [ ] Admin dashboard for content management
-- [ ] Payment integration for workshops
-- [ ] Real-time booking calendar
-- [ ] Student progress tracking
-- [ ] Multi-language support
-- [ ] Advanced search filters
-- [ ] Email notification system
+- [ ] Admin dashboard for excursion management
+- [ ] Optional payment integration
+- [ ] Real-time availability calendar
+- [ ] Multi-language support (EN/ES structure already in place)
 
 ## 🤝 Contributing
 

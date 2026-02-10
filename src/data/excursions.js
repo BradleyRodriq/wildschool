@@ -1,0 +1,102 @@
+/**
+ * Academic excursions in Puerto Rico offered by Wild School Experience.
+ * Led by Sandra Schleier (M.S. Marine Biology). Conservation-focused, citizen science–oriented.
+ * Booking sends an email to the owner with the form details (no payment).
+ */
+export const excursions = [
+  {
+    id: 'el-yunque',
+    title: 'El Yunque Rainforest',
+    category: 'nature',
+    location: 'El Yunque National Forest, Puerto Rico',
+    duration: '1 Day',
+    groupSize: '12–25 students',
+    rating: 4.9,
+    reviews: 0,
+    image: 'https://images.unsplash.com/photo-1511497584788-876760111969?w=400&h=250&fit=crop&crop=center',
+    description: 'Explore the only tropical rainforest in the U.S. National Forest System. Discover biodiversity, watersheds, and conservation through guided trails and citizen-science activities.',
+    highlights: ['Tropical biodiversity', 'Trail exploration', 'Conservation in action', 'Citizen science'],
+    included: ['Expert guide', 'Educational materials', 'Trail access'],
+    dates: ['Flexible — request your dates'],
+    difficulty: 'Easy to Moderate',
+    ageGroup: 'Grades 4–12',
+  },
+  {
+    id: 'coffee-tour',
+    title: 'Coffee & Culture',
+    category: 'culture',
+    location: 'Puerto Rico Coffee Region',
+    duration: '1 Day',
+    groupSize: '15–30 students',
+    rating: 4.8,
+    reviews: 0,
+    image: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&h=250&fit=crop&crop=center',
+    description: 'From bean to cup: discover Puerto Rico’s coffee heritage, sustainable farming, and how agriculture connects to conservation and local communities.',
+    highlights: ['Farm visit', 'Coffee process', 'Sustainability', 'Local culture'],
+    included: ['Farm tour', 'Expert guide', 'Tasting (age-appropriate)'],
+    dates: ['Flexible — request your dates'],
+    difficulty: 'Easy',
+    ageGroup: 'Grades 6–12',
+  },
+  {
+    id: 'beach-exploration',
+    title: 'Beach & Coastal Ecology',
+    category: 'nature',
+    location: 'Puerto Rico Coast',
+    duration: '1 Day',
+    groupSize: '12–25 students',
+    rating: 4.9,
+    reviews: 0,
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=250&fit=crop&crop=center',
+    description: 'Coastal ecosystems, marine life, and conservation at the shore. Hands-on activities and citizen science focused on beach health and plastic awareness.',
+    highlights: ['Coastal ecology', 'Marine life', 'Plastic & conservation', 'Citizen science'],
+    included: ['Expert guide', 'Equipment', 'Educational materials'],
+    dates: ['Flexible — request your dates'],
+    difficulty: 'Easy',
+    ageGroup: 'Grades 4–12',
+  },
+  {
+    id: 'birdwatching',
+    title: 'Birdwatching & Wildlife',
+    category: 'nature',
+    location: 'Puerto Rico',
+    duration: 'Half or full day',
+    groupSize: '10–20 students',
+    rating: 4.8,
+    reviews: 0,
+    image: 'https://images.unsplash.com/photo-1444464666168-49d633b86797?w=400&h=250&fit=crop&crop=center',
+    description: 'Introduce students to native and migratory birds and local wildlife. Learn identification, habitats, and how to contribute data through citizen science.',
+    highlights: ['Bird identification', 'Habitats', 'Citizen science', 'Native species'],
+    included: ['Expert guide', 'Binoculars (if available)', 'Checklists & materials'],
+    dates: ['Flexible — request your dates'],
+    difficulty: 'Easy',
+    ageGroup: 'Grades 3–12',
+  },
+  {
+    id: 'marine-discovery',
+    title: 'Marine Life & Conservation',
+    category: 'nature',
+    location: 'Puerto Rico Coast',
+    duration: '1 Day',
+    groupSize: '12–25 students',
+    rating: 4.9,
+    reviews: 0,
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop&crop=center',
+    description: 'Marine biology in the field: coastal ecosystems, species identification, and conservation. Led by a marine biologist, with a focus on citizen science and stewardship.',
+    highlights: ['Marine biology', 'Conservation', 'Citizen science', 'Hands-on learning'],
+    included: ['Expert guide (marine biologist)', 'Equipment', 'Educational materials'],
+    dates: ['Flexible — request your dates'],
+    difficulty: 'Easy',
+    ageGroup: 'Grades 6–12',
+  },
+];
+
+export const categories = [
+  { id: 'all', name: 'All Destinations', color: 'from-gray-500 to-gray-600' },
+  { id: 'nature', name: 'Nature & Wildlife', color: 'from-green-500 to-emerald-500' },
+  { id: 'culture', name: 'Culture & Agriculture', color: 'from-amber-500 to-orange-500' },
+];
+
+export function getExcursionById(id) {
+  return excursions.find((e) => e.id === id) || null;
+}

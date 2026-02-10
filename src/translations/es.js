@@ -2,82 +2,81 @@ export const esTranslations = {
   // Navigation
   nav: {
     home: 'Inicio',
-    educationalContent: 'Contenido Educativo',
-    academicExcursions: 'Excursiones Académicas',
-    bookWorkshop: 'Reservar Taller',
+    whatWeOffer: 'Lo Que Ofrecemos',
+    blog: 'Blog',
     about: 'Acerca de',
-    bookNow: 'Reservar Ahora',
+    contactUs: 'Contáctenos',
   },
-  
+
   // Home page
   home: {
     hero: {
       title: 'Experiencia Escolar Salvaje:',
-      subtitle: 'La Forma Salvaje de Aprender',
-      bookExcursion: 'Reservar tu Excursión',
-      learnAboutUs: 'Conoce Más Sobre Nosotros',
+      subtitle: 'Conservación y Ciencia Ciudadana en Puerto Rico',
+      bookExcursion: 'Explora Nuestras Excursiones',
+      learnAboutUs: 'Conócenos',
       videoDuration: 'Video de 2 min',
     },
-    
+
     features: {
-      title: '¿Por Qué Elegir Experiencias Escolares Salvajes?',
-      description: 'Creemos que la educación debe ser práctica, impulsada por la curiosidad y arraigada en la naturaleza. En Experiencia Escolar Salvaje, conectamos estudiantes, familias y comunidades con los ecosistemas de Puerto Rico a través de excursiones, talleres y oportunidades de voluntariado que inspiran el amor por el medio ambiente. Esta es la forma salvaje de aprender: fuera del aula, inmersos en la naturaleza y guiados por la curiosidad.',
+      title: '¿Por Qué Experiencia Escolar Salvaje?',
+      description: 'Somos una empresa enfocada en la conservación que introduce a los estudiantes a la naturaleza a través de la ciencia ciudadana y excursiones académicas en Puerto Rico. Desde El Yunque hasta la costa, desde la vida marina hasta el reciclaje y el plástico, conectamos el aprendizaje con el mundo real—liderados por Sandra Schleier, bióloga marina y educadora.',
       educationalPrograms: {
-        title: 'Programas Educativos',
-        description: 'Programas integrales basados en currículo diseñados para escuelas, universidades y estudiantes de por vida.',
+        title: 'Excursiones Académicas',
+        description: 'El Yunque, café, playa, aves y descubrimiento marino—experiencias prácticas en todo Puerto Rico.',
       },
       ecoturisticExcursions: {
-        title: 'Excursiones Ecoturísticas',
-        description: 'Tours de naturaleza sostenibles y aventuras al aire libre que combinan educación con conciencia ambiental.',
+        title: 'Conservación en Acción',
+        description: 'Cada excursión y charla se conecta con la conservación y el cuidado de los ecosistemas de la isla.',
       },
       volunteering: {
-        title: 'Voluntariado y Ciencia Ciudadana',
-        description: 'Participa en proyectos de conservación significativos y contribuye a la investigación científica mientras aprendes.',
+        title: 'Ciencia Ciudadana',
+        description: 'Los estudiantes contribuyen a la ciencia real mediante observación y datos en nuestras excursiones.',
       },
       educationalResources: {
-        title: 'Recursos Educativos',
-        description: 'Acceso a materiales de aprendizaje integrales, guías y recursos digitales para todas las edades.',
+        title: 'Charlas Educativas',
+        description: 'Vida marina, reciclaje, descomposición del plástico y más—para escuelas y grupos, presencial o virtual.',
       },
     },
-    
+
     gallery: {
-      title: 'Explora Nuestras Aventuras de Aprendizaje',
-      description: 'Realiza un viaje visual a través de nuestros programas educativos, excursiones y talleres.',
+      title: 'Explora Puerto Rico Con Nosotros',
+      description: 'Una mirada a nuestras excursiones y la naturaleza que exploramos con los estudiantes.',
     },
-    
+
     testimonials: {
       title: 'Lo Que Dicen los Participantes',
-      description: 'Únete a miles de estudiantes, familias y educadores satisfechos que han experimentado nuestros programas de aprendizaje basados en la naturaleza.',
+      description: 'Educadores y estudiantes comparten su experiencia con Experiencia Escolar Salvaje.',
       sarah: {
         name: 'Sarah Johnson',
         role: 'Profesora de Secundaria',
-        content: 'Los talleres transformaron mi enfoque de la educación científica. ¡Mis estudiantes están más comprometidos que nunca!',
+        content: 'Las excursiones conectaron nuestro currículo con el mundo real. Mis estudiantes por fin vieron por qué importa la conservación.',
       },
       michael: {
         name: 'Michael Chen',
-        role: 'Estudiante Universitario',
-        content: 'Las excursiones proporcionaron contexto del mundo real que hizo que conceptos complejos se entendieran instantáneamente.',
+        role: 'Coordinador de Ciencias',
+        content: 'El enfoque en ciencia ciudadana hizo del viaje más que un paseo—los estudiantes se sintieron como investigadores.',
       },
       emily: {
         name: 'Dra. Emily Rodriguez',
         role: 'Directora de Educación',
-        content: 'Experiencias Escolares Salvajes ha revolucionado nuestro currículo con su enfoque innovador.',
+        content: 'Experiencia Escolar Salvaje da vida a la biología marina y la conservación en Puerto Rico.',
       },
     },
-    
+
     cta: {
-      title: '¿Listo para Explorar el Aula de la Naturaleza?',
-      description: 'Reserva tu excursión académica hoy y descubre la diferencia que puede hacer el aprendizaje inmersivo basado en la naturaleza.',
-      bookExcursion: 'Reservar tu Excursión',
-      learnMore: 'Saber Más',
+      title: '¿Listos para Llevar a Tus Estudiantes a la Naturaleza?',
+      description: 'Reserva una excursión o solicita una charla. Te contactaremos para confirmar—sin pago en línea.',
+      bookExcursion: 'Ver Lo Que Ofrecemos',
+      learnMore: 'Acerca de Nosotros',
     },
   },
-  
+
   // Common
   common: {
-    studentsEnrolled: 'Estudiantes Inscritos',
-    expertEducators: 'Educadores Expertos',
-    excursionsConducted: 'Excursiones Realizadas',
-    fieldTripLocations: 'Ubicaciones de Excursiones',
+    studentsEnrolled: 'Estudiantes Alcanzados',
+    expertEducators: 'Educadores',
+    excursionsConducted: 'Excursiones',
+    fieldTripLocations: 'Ubicaciones en Puerto Rico',
   },
 };

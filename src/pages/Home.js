@@ -83,7 +83,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 lg:py-32">
+      <section aria-label="Introduction" className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 lg:py-32">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -105,7 +105,7 @@ const Home = () => {
                 <span className="text-2xl lg:text-3xl text-gray-700 dark:text-gray-300">{t.home.hero.subtitle}</span>
               
                               <div className="flex flex-col sm:flex-row gap-4">
-                  <Link to="/academic-excursions" className="btn-primary text-lg px-8 py-4">
+                  <Link to="/what-we-offer" className="btn-primary text-lg px-8 py-4">
                     {t.home.hero.bookExcursion}
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
@@ -124,8 +124,8 @@ const Home = () => {
               <div className="relative z-10">
                 <img
                   src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&crop=center"
-                  alt="Students learning outdoors"
-                  className="rounded-2xl shadow-2xl"
+                  alt="Students learning outdoors in a natural setting"
+                  className="rounded-2xl shadow-2xl w-full h-auto"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4">
                   <div className="flex items-center space-x-3">
@@ -375,7 +375,7 @@ const Home = () => {
               {t.home.cta.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/academic-excursions" className="btn-primary text-lg px-8 py-4">
+              <Link to="/what-we-offer" className="btn-primary text-lg px-8 py-4">
                 {t.home.cta.bookExcursion}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
