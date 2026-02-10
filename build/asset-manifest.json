@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wildschool/static/css/main.9144c167.css",
+    "main.js": "/wildschool/static/js/main.ccee9e1d.js",
+    "index.html": "/wildschool/index.html",
+    "main.9144c167.css.map": "/wildschool/static/css/main.9144c167.css.map",
+    "main.ccee9e1d.js.map": "/wildschool/static/js/main.ccee9e1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9144c167.css",
+    "static/js/main.ccee9e1d.js"
+  ]
+}
